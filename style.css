@@ -1,0 +1,68 @@
+/* Glassmorphism Card Effect */
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/* Main App Styling */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.stApp {
+    background: linear-gradient(135deg, #5A189A 0%, #9D4EDD 100%);
+    color: white;
+}
+
+/* Buttons */
+.stButton>button {
+    background-color: #C77DFF;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.stButton>button:hover {
+    background-color: #B362FF;
+}
+
+/* Radio Buttons */
+.stRadio>div {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+/* Progress Bar for Scores */
+.stProgress > div > div > div > div {
+    background-color: #C77DFF;
+}
+
+/* Headings and Text */
+h1, h2, h3 {
+    color: #FFFFFF;
+}
+
+p, .stMarkdown {
+    color: #E0E0E0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .glass-card {
+        padding: 1.5rem;
+    }
+    .stButton>button {
+        width: 100%;
+    }
+}
